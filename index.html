@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+  <script src="https://kit.fontawesome.com/2db4974301.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="src/style.css" />
   <title>Weather App</title>
 </head>
@@ -20,7 +20,7 @@
         <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
-              <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+              <input type="search" placeholder="Select your city:" class="form-control" id="city-input"
                 autocomplete="off" />
             </div>
             <div class="col-3">
@@ -28,10 +28,11 @@
             </div>
           </div>
         </form>
+        <i class="fas fa-cloud-sun cloudy-weather"></i>
         <div class="overview">
           <h1 id="city"></h1>
           <ul>
-            <li>Last updated: <span id="date"></span></li>
+            <li><span id="date"></span></li>
             <li id="description"></li>
           </ul>
         </div>
@@ -48,15 +49,63 @@
           </div>
           <div class="col-6">
             <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
+              <li>💧 Humidity <span id="humidity"></span>%</li>
+              <li>💨 Wind <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="card" style="width: 21rem;">
+        <div class="card-body">
+          <h5 class="card-title">🌧</h5>
+          <h6 class="card-subtitle">Sun</h6>
+          <div class="card-description">
+            <i>💧 88%
+              <br />
+              💨 1km/h
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 21rem;">
+        <div class="card-body">
+          <h5 class="card-title">🌦</h5>
+          <h6 class="card-subtitle">Mo</h6>
+          <div class="card-description">
+            <i>💧 70%
+              <br />
+              💨 1km/h
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 21rem;">
+        <div class="card-body">
+          <h5 class="card-title">⛅️</h5>
+          <h6 class="card-subtitle">Tue</h6>
+          <div class="card-description">
+            <i>💧 68%
+              <br />
+              💨 1km/h
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 21rem;">
+        <div class="card-body">
+          <h5 class="card-title">🌧</h5>
+          <h6 class="card-subtitle">Wed</h6>
+          <div class="card-description">
+            <i>💧 85%
+              <br />
+              💨 1km/h
+            </i>
+          </div>
+        </div>
+      </div>
+      <br>
       <small>
-        <a href="https://github.com/HeleneLi" target="_blank">by Helene Lipp/a>
-        by Helene Lipp
+        <a href="https://github.com/HeleneLi" target="_blank">by Helene Lipp</a>
       </small>
     </div>
   </div>
