@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: 'Lucida Sans Unicode', sans-serif;
 }
 
 h1 {
@@ -15,18 +15,18 @@ ul {
   padding: 0;
 }
 
-.cloudy-weather {
-  display: block;
-  text-align: center;
-  color: white;
-  font-size: 150px;
-  transition: all 150ms ease-in-out;
-  margin: 20px auto;
-  left: 0;
-  top: 0px;
+.image-seasons {
+    width: 200px;
+    height: 120px;
 }
-.cloudy-weather:hover {
-  font-size: 175px;
+
+/* Resize images */
+.image-seasons img {
+    width: 285%;
+    height: auto;
+    opacity: 0.2;
+}
+.image-seasons img:hover {
   color: lightcyan;
 }
 
@@ -53,7 +53,7 @@ li:first-letter {
   padding: 60px;
   border: 7px dotted lightcyan;
   border-radius: 8px;
-  background: rgb(231, 125, 125);
+  background: rgb(66, 141, 151);
 }
 
 .overview {
@@ -96,7 +96,7 @@ li:first-letter {
   padding: 10px 17px 10px;
   margin-top: 40px;
   background-color: white;
-  border: 1.5px solid lightcoral;
+  border: 1.5px solid rgb(66, 141, 151);
   border-radius: 10px;
   box-shadow: 1px 1px 5px 1px grey;
 }
